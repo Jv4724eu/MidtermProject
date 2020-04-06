@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Coloring Web App</title>
+    <!--icon for tab-->
+    <link rel="icon" href="images/painting.png">
+    <!--javascript-->
+    <script async defer src="script.js"></script>
+    <!-- bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- CSS stylesheet-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&family=Patua+One&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="jumbotron">
+    <h1>free Coloring</h1>
+</div>
+
+<br>
+
+<!--coloring canvas-->
+<div id="canvas_container">
+    <canvas id="canvas" height="400" width="495"></canvas>
+</div>
+
+
+<!--navigation bar for tools-->
+<div class="navbar">
+    color <input type="color" id="color">
+    brush size <input type="range" id="range">
+    <button type="button" class="btn btn-primary" id="undo">UNDO</button>
+    <button type="button" class="btn btn-primary" id="clear">CLEAR</button>
+    <a id="download" download="image.png"><button type="button" class="btn btn-primary" onClick="download()">SAVE</button></a>
+</div>
+
+</body>
+</html>
